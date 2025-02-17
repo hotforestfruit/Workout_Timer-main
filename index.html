@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="timer">
+      <div id="totalTimer"></div>
+      <!-- <br /> -->
+      <!-- <div id="current"> -->
+      <div id="currentTask"></div>
+      <div id="currentTimer"></div>
+      <div id="nextTaskName"></div>
+      <!-- </div> -->
+    </div>
+   
+    <div id="container">
+      
+      <div id="container1">
+        <div id="presets">
+          <h3>HIIT Workout Presets</h3>
+          <button type="button" id="upperBody">Upper Body</button>
+          <br>
+          <button type="button" id="lowerBody">Lower Body</button>
+        </div>
+      </div>
+      <div id="container2">
+        <h3>Enter New Tasks</h3>
+        <div id="custom">
+          
+          <form id="inputs">
+            <label for="taskName" required>Name</label>
+            <input type="text" id="taskName" />
+            
+            <label for="taskDuration">Duration</label>
+            <input type="number" id="taskDuration" required />
+            
+            <br />
+            <br />
+  
+            <input type="submit" id="addTask" value="Add Task" />
+          </form>
+        </div>
+        
+        
+        
+      </div>
+      <div id="controls">
+        <button id="start">Start</button>
+        <!-- <button id="Pause">Pause</button> -->
+      </div>
+      
+    </div>
+    <div id="taskList">
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
